@@ -1,0 +1,207 @@
+:root {
+    --sky: #00BFFF;
+    --bg: #0a0a0a;
+    --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+}
+
+body{
+    font-size: 1.2rem;
+    font-family: 'Work Sans', sans-serif;
+    min-height: 3000px;
+}
+
+.hero::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/port.jpeg);
+    background-size: cover;
+    background-position: center ;
+    z-index: -1;
+    filter: blur();
+}
+
+.hero{
+    position: relative;
+    min-height: 100vh;
+}
+
+.hero h1, .hero h4, .hero p{
+    text-shadow: var(--shadow);
+}
+
+.hero h1{
+    font-family: 'Sacramento', cursive;
+    font-size: 6rem;
+}
+
+.hero h4{
+    font-size: 1.6rem;
+}
+
+.hero p{
+    font-size: 1.4rem;
+}
+
+.hero a{
+    color: var(--sky);
+    background-color: white;
+    box-shadow: var(--shadow);
+}
+
+.hero a:hover{
+    background-color: var(--sky);
+    color: white;
+}
+
+.mynavbar{
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    backdrop-filter: blur(4px);
+}
+
+.mynavbar .offcanvas{
+    height: 100vh;
+}
+
+.mynavbar .navbar-brand, .mynavbar .offcanvas-title{
+    font-family: 'sacramento', cursive;
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+
+.mynavbar .nav-link{
+    text-transform: uppercase;
+}
+
+.home{
+    background-position: center ;
+    background-image: url(img/oath.jpeg);
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: -6rem;
+    padding-top: 15rem;
+    padding-bottom: 8rem;
+}
+
+.home h2{
+    color: ghostwhite;
+    font-family: 'sacramento';
+    font-size: 5rem;
+    font-weight: bold;
+    text-shadow: var(--shadow);
+}
+
+.home h3{
+    color: snow;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-shadow: var(--shadow);
+}
+
+.home p{
+    color: seashell;
+    font-size: 1.1rem;
+    text-shadow: var(--shadow);
+}
+
+.home .couple{
+    margin-top: 100px;
+}
+
+.home .couple h3{
+    color: var(--sky);
+    font-family: 'sacramento';
+    font-size: 3rem;
+}
+
+.home .couple img{
+    width: 100%;
+}
+
+.info{
+    background-color: var(--bg);
+    background-position: center ;
+    background-size: cover;
+    min-height: 100vh;
+    color: white;
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+}
+
+.info h2{
+    color: var(--sky);
+    font-family: 'sacramento';
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.info .alamat{
+    font-size: 1.1rem;  
+    margin-top: 1.5rem;      
+}
+
+.info .description{
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 1.5rem;
+}
+
+.info .card{
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    color: white !important;
+    border: 1px solid #999;
+}
+
+.info .card-header{
+    border-bottom: 1px solid #999;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.info .card-body{
+    font-size: 1rem;
+}
+
+.info .card-footer{
+    border-top: 1px solid #999;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+/*Media Query*/
+/*Laptop*/
+@media (max-width: 992px){
+    html {
+        font-size: 75%;
+    }
+    .simply-countdown>.simply-section{
+        padding: 70px;
+    }
+}
+/*Tablet*/
+@media (max-width: 768px){
+    html {
+        font-size: 65%;
+    }
+    .simply-countdown>.simply-section{
+        padding: 60px;
+        margin: 5px;
+    }
+    .mynavbar .nav-link{
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+/*Mobile Phone*/
+@media (max-width: 576px){
+    html {
+        font-size: 60%;
+    }
+    .simply-countdown>.simply-section{
+        padding: 45px;
+        margin: 3px;
+    }
+}
